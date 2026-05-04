@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'javac Jen.java'
+                bat 'javac Jen.java'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'java Jen'
+                bat 'java Jen'
             }
         }
     }
